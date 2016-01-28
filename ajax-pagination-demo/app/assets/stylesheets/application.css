@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+body {
+  font-family: "Hevetica", Arial;
+  font-size: 13px;
+}
+
+ul.books {
+  list-style-type: none;
+}
+
+ul.books li {
+  float: left;
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 13px;
+}
+
+ul.books li img {
+  box-shadow: 0 0 5px #888;
+  margin-bottom: 10px;
+}
+
+nav.pagination {
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+nav.pagination a {
+  text-decoration: none;
+  border: 1px solid #eee;
+  color: #0d75aa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav.pagination a:hover {
+  color: #fff;
+  background: #074362;
+}
+
+nav.pagination span.current {
+  padding: 10px;
+}
+
+div.loading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #333;
+}

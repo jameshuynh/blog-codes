@@ -1,0 +1,13 @@
+<div id='books_container'>
+  <ul class='books clearfix'>
+    <% @books.each do |book| %>
+      <li>
+        <%= image_tag book.cover.url(:thumb) %>
+        <br/>
+        <%= book.title %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= paginate @books %>
+</div>

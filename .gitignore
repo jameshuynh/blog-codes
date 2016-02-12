@@ -1,3 +1,5 @@
 */public/system
 db/*.sqlite
 dump.rdb
+.DS_Store
+.ruby-version

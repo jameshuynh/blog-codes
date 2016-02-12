@@ -1,0 +1,30 @@
+<!-- app/views/items/index.html.erb -->
+
+<input type="text" name="description"
+       id="new_item" placeholder="New Item" />
+
+<div id='to_do_list_container'>
+  <h3>
+    To Do List
+    <span class='arrange-items' for='#to_do_list'>
+      Arrange items
+    <span>
+  </h3>
+  <ul id='to_do_list'>
+    <% for item in @undone_items do %>
+      <%= render 'item', item: item %>
+    <% end %>
+  </ul>
+
+  <h3>
+    Done List
+    <span class='arrange-items' for='#done_list'>
+      Arrange items
+    <span>
+  </h3>
+  <ul id='done_list'>
+    <% for item in @done_items do %>
+      <%= render "item", item: item %>
+    <% end %>
+  </ul>
+</div>

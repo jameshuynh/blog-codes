@@ -1,0 +1,16 @@
+<div class='fields'>
+  <h3>Task</h3>
+  <div class='field'>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :is_done %>
+    <%= f.check_box :is_done %>
+  </div>
+
+  <%= f.hidden_field :_destroy %>
+  <%= link_to "[Remove Task]", '#',
+    onClick: "removeField(this); return false;", class: 'remove-link-button' %>
+</div>

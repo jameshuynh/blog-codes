@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+html {
+  background: #526977;
+  font-family: 'Helvetica';
+  color: #333;
+  font-size: 15px;
+}
+
+div.stage {
+  background: #fff;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px #333;
+}
+
+h1 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+form label {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+form div.field {
+  margin-top: 10px;
+}
+
+form div.fields {
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+}
+
+form input[type='text'], input[type='password'], form textarea {
+  border: 1px solid #ccc;
+  width: calc(100% - 155px);
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  &:focus {
+    border: 1px solid #1e8bb9;
+  }
+}
+
+a {
+  color: #1e8bb9;
+  font-size: 14px;
+}
+
+form input {
+  padding: 10px;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+  padding: 10px;
+  outline: none;
+  height: 120px;
+}
+
+form input[type=submit] {
+  background: #1e8bb9;
+  color: #fff;
+  padding: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  border: 0 none;
+  cursor: pointer;
+  &:hover {
+    background: darken(#1e8bb9, 10%);
+  }
+}
+
+form div.actions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+form a.add-link-button {
+  background: #13c027;
+  color: #fff;
+  padding: 10px 20px;
+  float: right;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  &:hover {
+    background: darken(#13c027, 10%);
+  }
+}
+
+form a.remove-link-button {
+  color: #c33522;
+  text-decoration: none;
+  font-size: 12px;
+  &:hover {
+    color: darken(#c33522, 10%);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  thead th {
+    text-align: left;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+  }
+  tbody td {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  tbody tr {
+    &:nth-child(even) {
+      background: #efefef;
+    }
+  }
+}

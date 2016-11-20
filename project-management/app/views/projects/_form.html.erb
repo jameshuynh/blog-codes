@@ -1,0 +1,36 @@
+<%= form_for(project) do |f| %>
+  <% if project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class='tasks clearfix'>
+    <div class='tasks-sub-form'>
+      <%= f.fields_for :tasks do |task_form| %>
+        <%= render "task_fields", f: task_form %>
+      <% end %>
+    </div>
+    <%= link_to_add_fields("Add Task", f, :tasks, { class: "add-link-button" }) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

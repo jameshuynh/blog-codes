@@ -1,0 +1,7 @@
+div.ProjectForm div.inline-error {
+  padding: 5px;
+  border-radius: 0 0 4px 4px;
+  z-index: -1;
+  top: -2px;
+  position: relative;
+}

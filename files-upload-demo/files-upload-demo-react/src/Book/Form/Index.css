@@ -1,0 +1,55 @@
+div.BookForm div.inline-error {
+  padding: 5px;
+  border-radius: 0 0 4px 4px;
+  z-index: -1;
+  top: -2px;
+  position: relative;
+}
+
+div.BookForm ul.selected-covers {
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin-top: 10px;
+}
+
+div.BookForm ul.selected-covers li {
+  width: 150px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+div.BookForm ul.selected-covers li div.photo {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  border-radius: 4px;
+  border: 2px solid #333;
+  position: relative;
+}
+
+div.BookForm ul.selected-covers li div.photo div.remove {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 2.5;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+  right: 10px;
+}
+
+div.BookForm ul.selected-covers li div.file-name {
+  color: #999;
+  text-align: center;
+  margin-top: 10px;
+}

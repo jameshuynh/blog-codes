@@ -1,0 +1,18 @@
+<div style='display: flex; justify-content: center; margin-top: 120px;'>
+  <a id='download_books' class='btn btn-success' href='/books/download'>Download Books</a>
+</div>
+
+<script language='javascript'>
+  $(function() {
+    $('#download_books').click(function(e) {
+      e.preventDefault();
+      var uuid = generateUUID();
+      $(this).html('Downloading...').attr('disabled', 'disabled');
+      var url = $(this).attr('href') + '?uuid=' + uuid;
+      subscribeDownloadChannel(uuid, function() {
+        $.get(url);
+      });
+      return false;
+    })
+  });
+</script>
